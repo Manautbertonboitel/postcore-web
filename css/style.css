@@ -55,3 +55,57 @@ section:not(:last-of-type) {
 input {
     color: #010101;
 }
+
+.image_showcase {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    /* justify-content: space-between; */
+}
+
+.image_showcase div {
+    width: 12.5%;       /* 5 images par ligne */
+    height: auto;
+}
+
+.image_showcase div img {
+    /* max-width: 150px; */
+    height: auto;
+    width: 100%;
+}
+
+
+/* Tablette : 3 images par ligne */
+@media (max-width: 1200px) {
+    .image_showcase div {
+      width: 14.28%;
+    }
+}
+
+/* Tablette : 3 images par ligne */
+@media (max-width: 1000px) {
+    .image_showcase div {
+      width: 16.66%;
+    }
+}
+
+/* Tablette : 3 images par ligne */
+@media (max-width: 800px) {
+    .image_showcase div {
+      width: 20%;
+    }
+}
+  
+/* Mobile : 2 images par ligne */
+@media (max-width: 600px) {
+    .image_showcase div {
+        width: 25%;
+    }
+}
+
+/* 3 images par ligne */
+@media (max-width: 400px) {
+    .image_showcase div {
+        width: 33.33%;
+    }
+}
