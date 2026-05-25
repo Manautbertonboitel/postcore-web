@@ -9,13 +9,17 @@
     font-family: "EB Garamond", serif;
 }
 
+body {
+    background-color: #010101;
+    padding: var(--general-margin);
+}
+
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-body {
-    background-color: #010101;
-    padding: var(--general-margin);
+a:hover {
+    color: blue;
 }
 
 .title {
@@ -25,10 +29,6 @@ body {
 
 .title img {
     height: 45px;
-}
-
-h1 {
-
 }
 
 .links {
@@ -77,10 +77,34 @@ input {
     width: 100%;
 }
 
+ul, table {
+    margin: 0;
+    margin-top: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  /* width: 50%; */
+}
+
+td, th {
+  /* border: solid .5px rgba(255, 255, 255, 0.199); */
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
 @media (max-width: 500px) {
     .image_showcase div {
       width: 29%;
     }
+
+    table {
+        /* width: 100%; */
+}
 }
 
 /*
